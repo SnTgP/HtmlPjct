@@ -55,20 +55,15 @@
             font-weight: bold;
             margin-bottom: 4px;;
         }
-        .input {
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 24px;
-            font-size: var(--sm);
-            padding: 6px;
-            margin-bottom: 12px;
-            font-family: "Quicksand", sans-serif;
+        .value {
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin: 8px 0 32px 0;
         }
-        .primary-button {
-            background-color: var(--hospital-green);
-            color: var(--white);
-            border: none;
+        .secondary-button {
+            background-color: var(--white);
+            color: var(--hospital-green);
+            border: 1px solid var(--hospital-green);
             border-radius: 8px;
             height: 50px;
             width: 100%;
@@ -102,16 +97,16 @@
             <form action="/" class="form">
                 <div class="form">
                     <label for="name" class="label">Name</label>
-                    <input type="text" name="" id="name" placeholder="Jhon Doe" class="input input-password ">
+                    <p class="value">Jhon Doe</p>
 
                     <label for="email" class="label">Email address</label>
-                    <input type="text" name="" id="email" placeholder="example@gmail.com" class="input input-password ">
+                    <p class="value">example@gmail.com</p>
 
                     <label for="new-password" class="label">Password</label>
-                    <input type="password" name="" id="new-password" placeholder="*********" class="input input-password ">
+                    <p class="value">**********</p>
                 </div>
 
-                <input type="submit" value="Save" class="primary-button save-button">
+                <input type="submit" value="Edit" class="secondary-button save-button">
             </form>
         </div>
     </div>
